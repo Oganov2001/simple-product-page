@@ -6,5 +6,7 @@
 .DS_Store
 .prettierignore
 
+resources/fonts/outfit/static
+
 README_temp.md
 README_template.md
