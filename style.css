@@ -12,6 +12,8 @@
 body {
     height: 100vh;
     font-family: Outfit, sans-serif;
+    text-align: center;
+    background-color: #F9FAFB;
 }
 
 .author-info {
@@ -29,6 +31,108 @@ body {
 
 img {
     border-radius: 8px;
+    width: 95%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 /* Main */
+
+main {
+    text-align: left;
+    margin: 0 1rem;
+}
+
+main .nav {
+    font-size: 14px;
+    font-weight: 600;
+    margin: 1rem 0rem;
+}
+
+main .nav span {
+    font-weight: 300;
+    color: #394150;
+}
+
+main h1 {
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+main p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+main h2 {
+    font-size: 1rem;
+    margin: 1rem 0;
+}
+
+main ul {
+    margin: 1rem 2rem;
+}
+
+main ul li{
+    margin: 1rem 0rem;
+}
+
+/* Price Summary */
+.price-summary {
+    display: flex;
+    flex-direction: row;
+    background-color: #F3F4F6;
+    gap: 2rem;
+    border-radius: 0.5rem;
+    margin-top: 2rem;
+}
+
+.price-summary .content {
+    align-self: center;
+    margin: 1rem 1.5rem;
+}
+
+.price-summary .content h3 {
+    font-size: 1rem;
+    font-weight: 200;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+.price-summary .content p {
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.buttons button {
+    border-radius: 4px;
+    flex: 1 1 0;
+    height: 3rem;
+    font: inherit;
+    font-weight: 600;
+}
+
+.buttons .cart {
+    color: white;
+    border-style: none;
+    background-color: #652CD1;
+}
+
+.buttons .wishlist {
+    border: 1px solid #D2D5DA;
+    background-color: white;
+}
+
+.heart-icon {
+    content: url(resources/heart.svg);
+    display: inline;
+    translate: 0 3px;
+}
