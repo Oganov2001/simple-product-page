@@ -12,8 +12,7 @@
 body {
     height: 100vh;
     font-family: Outfit, sans-serif;
-    text-align: center;
-    background-color: #F9FAFB;
+    background-color: white;
 }
 
 .author-info {
@@ -27,13 +26,19 @@ body {
     text-decoration: none;
 }
 
+/* Root */
+
+.root {
+    text-align: center;
+}
+
 /* Image */
 
 img {
     border-radius: 8px;
-    width: 95%;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    max-width: 95%;
+    height: auto;
+    margin: 1rem;
 }
 
 /* Main */
@@ -43,13 +48,13 @@ main {
     margin: 0 1rem;
 }
 
-main .nav {
+.nav {
     font-size: 14px;
     font-weight: 600;
     margin: 1rem 0rem;
 }
 
-main .nav span {
+.nav span {
     font-weight: 300;
     color: #394150;
 }
@@ -69,15 +74,16 @@ main h2 {
     margin: 1rem 0;
 }
 
-main ul {
+ul {
     margin: 1rem 2rem;
 }
 
-main ul li{
+ul li{
     margin: 1rem 0rem;
 }
 
 /* Price Summary */
+
 .price-summary {
     display: flex;
     flex-direction: row;
@@ -120,6 +126,8 @@ main ul li{
     font-weight: 600;
 }
 
+/* Buttons*/
+
 .buttons .cart {
     color: white;
     border-style: none;
@@ -135,4 +143,59 @@ main ul li{
     content: url(resources/heart.svg);
     display: inline;
     translate: 0 3px;
+}
+
+@media only screen and (min-width: 700px) {
+    /* Root */
+    .root {
+        display: flex;
+        flex-direction: row;
+    }
+
+    /* Image */
+    img {
+        max-width: 50%;
+        height: auto;
+    }
+
+    /* Main */
+    main {
+        height: auto;
+    }
+
+    main h1 {
+        max-width: 85%;
+        margin-bottom: 2rem;
+    }
+
+    main p {
+        margin-bottom: 2rem;
+    }
+
+    .nav {
+        margin-bottom: 2rem;
+    }
+
+    /* Price Summary */
+    .price-summary {
+        max-width: 70%;
+        justify-content: space-evenly;
+    }
+
+    .price-summary .content {
+        align-self: center;
+    }
+
+    .price-summary .content p {
+        margin: 0;
+    }
+
+    .price-summary .price p{
+        font-size: 2rem;
+    }
+
+    /* Buttons */
+    .buttons {
+        max-width: 70%;
+    }
 }
